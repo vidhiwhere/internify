@@ -1,0 +1,76 @@
+{
+  "settings": {
+    "collegeName": "Tech Institute of Technology",
+    "replyToEmail": "tpo@techinstitute.edu",
+    "ccStudent": true,
+    "mailerMode": "mock",
+    "smtpHost": "smtp.mailtrap.io",
+    "smtpPort": 2525,
+    "smtpUser": "",
+    "smtpPass": "",
+    "smtpSecure": false
+  },
+  "internships": [
+    {
+      "id": "1",
+      "studentName": "Alex Rivera",
+      "studentEmail": "alex.rivera@student.tech.edu",
+      "companyName": "Stripe",
+      "hrName": "David Chen",
+      "hrEmail": "dchen@stripe.com",
+      "startDate": "2026-05-15",
+      "endDate": "2026-08-15",
+      "status": "Verified",
+      "token": "tok_alex_stripe_2026",
+      "sentOn": "2026-07-03T05:00:35.095Z",
+      "verifiedOn": "2026-07-03T05:03:27.506Z",
+      "feedback": "Verified successfully by QA subagent."
+    },
+    {
+      "id": "2",
+      "studentName": "Sophia Martinez",
+      "studentEmail": "sophia.m@student.tech.edu",
+      "companyName": "Microsoft",
+      "hrName": "Sarah Jenkins",
+      "hrEmail": "sjenkins@microsoft.com",
+      "startDate": "2026-06-01",
+      "endDate": "2026-08-31",
+      "status": "Sent",
+      "token": "tok_sophia_msft_2026",
+      "sentOn": "2026-07-01T08:00:00.000Z",
+      "verifiedOn": null,
+      "feedback": ""
+    },
+    {
+      "id": "3",
+      "studentName": "Liam Johnson",
+      "studentEmail": "ljohnson@student.tech.edu",
+      "companyName": "Tesla Inc.",
+      "hrName": "Elon Musk",
+      "hrEmail": "emusk@tesla.com",
+      "startDate": "2026-01-10",
+      "endDate": "2026-04-10",
+      "status": "Verified",
+      "token": "tok_liam_tesla_2026",
+      "sentOn": "2026-02-15T09:12:00.000Z",
+      "verifiedOn": "2026-02-17T14:35:10.000Z",
+      "feedback": "All details are correct. Student performed exceptionally well."
+    },
+    {
+      "id": "4",
+      "studentName": "Emily Watson",
+      "studentEmail": "ewatson@student.tech.edu",
+      "companyName": "Meta Platforms",
+      "hrName": "Mark Zuckerberg",
+      "hrEmail": "mzuck@meta.com",
+      "startDate": "2026-05-01",
+      "endDate": "2026-07-31",
+      "status": "Correction Requested",
+      "token": "tok_emily_meta_2026",
+      "sentOn": "2026-05-10T10:00:00.000Z",
+      "verifiedOn": "2026-05-12T11:45:00.000Z",
+      "feedback": "Start date should be May 4th, 2026 instead of May 1st."
+    }
+  ],
+  "logs": []
+}

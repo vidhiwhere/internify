@@ -1,0 +1,22 @@
+{
+  "name": "internify-root",
+  "version": "1.0.0",
+  "description": "Full-stack Internship Verification Application",
+  "main": "server.js",
+  "scripts": {
+    "server": "node --watch server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix frontend",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.13"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "private": true
+}
