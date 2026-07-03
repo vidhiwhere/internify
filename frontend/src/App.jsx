@@ -12,6 +12,7 @@ export default function App() {
   const [logs, setLogs] = useState([]);
   const [toasts, setToasts] = useState([]);
   const [theme, setTheme] = useState('dark');
+  const [loading, setLoading] = useState(true);
 
   // Simple router check
   const path = window.location.pathname;
@@ -20,11 +21,20 @@ export default function App() {
 
   // On mount, load initial data & dark theme
   useEffect(() => {
-    if (!isVerifyPage) {
-      fetchInternships();
-      fetchSettings();
-      fetchLogs();
-    }
+    const loadData = async () => {
+      if (!isVerifyPage) {
+        await Promise.all([
+          fetchInternships(),
+          fetchSettings(),
+          fetchLogs()
+        ]);
+        // Slight delay to showcase the gorgeous glowing liquid loader
+        setTimeout(() => setLoading(false), 1200);
+      } else {
+        setLoading(false);
+      }
+    };
+    loadData();
     // Apply default dark theme to body
     document.body.classList.remove('light-theme');
   }, [isVerifyPage]);
@@ -182,6 +192,30 @@ export default function App() {
   // Render HR verification subpage directly
   if (isVerifyPage) {
     return <HRVerify token={verifyToken} />;
+  }
+
+  if (loading) {
+    return (
+      <div className="page-loader">
+        <div className="loader">
+          <svg width="100" height="100" viewBox="0 0 100 100">
+            <defs>
+              <mask id="clipping">
+                <polygon points="0,0 100,0 100,100 0,100" fill="black"></polygon>
+                <polygon points="25,25 75,25 50,75" fill="white"></polygon>
+                <polygon points="50,25 75,75 25,75" fill="white"></polygon>
+                <polygon points="35,35 65,35 50,65" fill="white"></polygon>
+                <polygon points="35,35 65,35 50,65" fill="white"></polygon>
+                <polygon points="35,35 65,35 50,65" fill="white"></polygon>
+                <polygon points="35,35 65,35 50,65" fill="white"></polygon>
+              </mask>
+            </defs>
+          </svg>
+          <div className="box"></div>
+        </div>
+        <div className="page-loader-text">Loading Placement Cell Console...</div>
+      </div>
+    );
   }
 
   return (

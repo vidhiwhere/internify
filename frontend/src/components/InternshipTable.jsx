@@ -354,7 +354,7 @@ export default function InternshipTable({
               
               <form onSubmit={handleSubmit}>
                 <div className="form-grid">
-                  <div className="flex-column form-group-full">
+                  <div className="flex-column">
                     <label className="form-label">Student Name *</label>
                     <div className="inputForm">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" width="20" height="20">
@@ -372,7 +372,7 @@ export default function InternshipTable({
                     </div>
                   </div>
                   
-                  <div className="flex-column form-group-full">
+                  <div className="flex-column">
                     <label className="form-label">Student Email (Optional)</label>
                     <div className="inputForm">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" width="20" height="20">
@@ -382,14 +382,14 @@ export default function InternshipTable({
                         type="email"
                         name="studentEmail"
                         className="input"
-                        placeholder="student@college.edu (used for CC)"
+                        placeholder="student@college.edu"
                         value={formData.studentEmail}
                         onChange={handleFormChange}
                       />
                     </div>
                   </div>
 
-                  <div className="flex-column form-group-full">
+                  <div className="flex-column">
                     <label className="form-label">Company Name *</label>
                     <div className="inputForm">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" width="20" height="20">
@@ -399,7 +399,7 @@ export default function InternshipTable({
                         type="text"
                         name="companyName"
                         className="input"
-                        placeholder="e.g. Stripe, Google, Acme Corp"
+                        placeholder="e.g. Stripe, Google"
                         value={formData.companyName}
                         onChange={handleFormChange}
                         required
@@ -424,7 +424,7 @@ export default function InternshipTable({
                     </div>
                   </div>
 
-                  <div className="flex-column">
+                  <div className="flex-column form-group-full">
                     <label className="form-label">HR Email Address *</label>
                     <div className="inputForm">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" width="20" height="20">
