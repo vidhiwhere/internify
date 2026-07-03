@@ -12,6 +12,21 @@
   },
   "internships": [
     {
+      "id": "63c831215bef68b4",
+      "studentName": "vidhi",
+      "studentEmail": "",
+      "companyName": "anthropic",
+      "hrName": "hey",
+      "hrEmail": "vidhiam2005@gmail.com",
+      "startDate": "",
+      "endDate": "",
+      "status": "Sent",
+      "token": "6d86fb4d27db8342341edd79ecf2cf4b09a2f8ecc803c0d5",
+      "sentOn": "2026-07-03T17:20:45.042Z",
+      "verifiedOn": null,
+      "feedback": ""
+    },
+    {
       "id": "1",
       "studentName": "Alex Rivera",
       "studentEmail": "alex.rivera@student.tech.edu",
