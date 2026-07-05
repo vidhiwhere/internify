@@ -3,11 +3,11 @@
     "collegeName": "Tech Institute of Technology",
     "replyToEmail": "tpo@techinstitute.edu",
     "ccStudent": true,
-    "mailerMode": "mock",
-    "smtpHost": "smtp.mailtrap.io",
-    "smtpPort": 2525,
-    "smtpUser": "",
-    "smtpPass": "",
+    "mailerMode": "smtp",
+    "smtpHost": "smtp.gmail.com",
+    "smtpPort": 587,
+    "smtpUser": "vidhiam2005@gmail.com",
+    "smtpPass": "hnjg adow oogz xtbq",
     "smtpSecure": false
   },
   "internships": [

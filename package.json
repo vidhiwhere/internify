@@ -4,7 +4,7 @@
   "description": "Full-stack Internship Verification Application",
   "main": "server.js",
   "scripts": {
-    "server": "node --watch server.js",
+    "server": "node --watch-path=server.js server.js",
     "client": "npm run dev --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "npm run build --prefix frontend",
