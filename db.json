@@ -7,7 +7,7 @@
     "smtpHost": "smtp.gmail.com",
     "smtpPort": 587,
     "smtpUser": "vidhiam2005@gmail.com",
-    "smtpPass": "hnjg adow oogz xtbq",
+    "smtpPass": "hnjgadooogzxtbq",
     "smtpSecure": false
   },
   "internships": [
@@ -20,7 +20,7 @@
       "hrEmail": "vidhiam2005@gmail.com",
       "startDate": "",
       "endDate": "",
-      "status": "Sent",
+      "status": "Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-13b3c7ef5b3sm55456436c88.1 - gsmtp",
       "token": "6d86fb4d27db8342341edd79ecf2cf4b09a2f8ecc803c0d5",
       "sentOn": "2026-07-03T17:20:45.042Z",
       "verifiedOn": null,
